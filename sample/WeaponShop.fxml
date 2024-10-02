@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.sample.WeaponController">
+   <children>
+      <TabPane fx:id="weaponTabPane" layoutX="1.0" layoutY="2.0" prefHeight="309.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="weapon1" text="Wall Trap">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="263.0" prefWidth="591.0">
+                     <children>
+                        <ImageView fx:id="weaponImage1" fitHeight="260.0" fitWidth="260.0" layoutX="15.0" layoutY="15.0">
+                           <image>
+                              <Image url="@../../../b.png" />
+                           </image>
+                        </ImageView>
+                        <TextArea fx:id="weaponInfo" editable="false" layoutX="310.0" layoutY="15.0" prefHeight="260.0" prefWidth="260.0" text="NAME: Proximity Trap&#10;&#10;CODE: 4&#10;&#10;PRICE: 75&#10;&#10;DAMAGE: 100&#10;" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="weapon2" text="Sniper Cannon">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="weaponInfo1" editable="false" layoutX="310.0" layoutY="15.0" prefHeight="260.0" prefWidth="260.0" text="NAME:&#10;Long Range Spear&#10;CODE: 2&#10;&#10;PRICE:&#10;25&#10;DAMAGE:&#10;35&#10;" />
+                        <ImageView fx:id="weaponImage2" fitHeight="260.0" fitWidth="260.0" layoutX="15.0" layoutY="15.0">
+                           <image>
+                              <Image url="@../../../d.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="weapon3" text="Volley spread Cannon">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="weaponInfo2" editable="false" layoutX="310.0" layoutY="15.0" prefHeight="260.0" prefWidth="260.0" text="NAME:&#10;Wall Spread Cannon&#10;CODE: 3&#10;&#10;PRICE:&#10;100&#10;DAMAGE:&#10;5&#10;&#10;" />
+                        <ImageView fx:id="weaponImage2" fitHeight="260.0" fitWidth="260.0" layoutX="15.0" layoutY="15.0">
+                           <image>
+                              <Image url="@../../../c.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="weapon4" text="Piercing Cannon">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="weaponInfo3" editable="false" layoutX="310.0" layoutY="15.0" prefHeight="260.0" prefWidth="260.0" text="NAME:&#10;Anti-Titan Shell&#10;CODE: 1&#10;&#10;PRICE:&#10;25&#10;DAMAGE:&#10;10&#10;&#10;&#10;" />
+                        <ImageView fx:id="weaponImage4" fitHeight="260.0" fitWidth="260.0" layoutX="15.0" layoutY="15.0">
+                           <image>
+                              <Image url="@../../../a.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="buyButton" disable="true" layoutX="42.0" layoutY="316.0" mnemonicParsing="false" onAction="#buyWeaponClicked" prefHeight="40.0" prefWidth="80.0" text="Buy" />
+      <Button layoutX="150.0" layoutY="316.0" mnemonicParsing="false" onAction="#CancelButtonClicked" prefHeight="40.0" prefWidth="80.0" text="Cancel" />
+      <ComboBox fx:id="selectingLanes" layoutX="369.0" layoutY="311.0" prefWidth="150.0" promptText="please select lane" />
+   </children>
+</AnchorPane>

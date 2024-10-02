@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.sample.GamesModeController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" layoutY="-1.0">
+         <image>
+            <Image url="@../../../../../../Downloads/GameM.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="253.0" layoutY="473.0" minHeight="0.0" mnemonicParsing="false" onAction="#easyButtonClicked" stylesheets="@styles.css" text="EASY" />
+      <Button layoutX="618.0" layoutY="473.0" mnemonicParsing="false" onAction="#hardButtonClicked" stylesheets="@styles.css" text="HARD" />
+      <Button layoutX="-145.0" layoutY="699.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="177.0" stylesheets="@styles.css" text="BACK" />
+   </children>
+</AnchorPane>

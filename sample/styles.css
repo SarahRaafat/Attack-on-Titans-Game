@@ -1,0 +1,13 @@
+/* .root {
+	-fx-background-image: url("C:/Users/16abo/workspace/Milestone03/src/Images/Background.png");
+	
+} */
+.button {
+    -fx-background-color:  transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 50px;
+    -fx-pref-width: 450px;
+    -fx-pref-height: 100px;
+    -fx-border-width: 20px; 
+    -fx-padding: 10px 20px;
+}

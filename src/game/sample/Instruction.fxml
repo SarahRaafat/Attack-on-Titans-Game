@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.sample.InstructionController">
+   <children>
+      <Button layoutX="62.0" layoutY="291.0" mnemonicParsing="false" onAction="#backButtonClicked" stylesheets="@styles.css" text="BACK" />
+      <TextArea editable="false" layoutX="36.0" layoutY="41.0" prefHeight="249.0" prefWidth="483.0" text="Welcome to Attack on Titans&#10;First of all you have to press play then choose which level you would like to play either easy or hard if you chose EASY you will have 3 lanes to protect from the upcoming attacking titans Beware!&#10;you will have a weapon registery to choose weapons from to implement into the lanes you want to attack the titans, you will also have their damage and price displayed and for the lanes you will have their health and ... displayed &#10;same goes for the HARD but with five lanes instead &#10;&#10;our game has 3 stages in either level EASY INTENSE GRUMBLING and you have to press on the pass turn button for the weapons to make action and if you didn't lose you get to the next stage.&#10;Have fun" wrapText="true" />
+   </children>
+</AnchorPane>
